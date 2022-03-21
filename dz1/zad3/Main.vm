@@ -1,0 +1,292 @@
+function Main.main 7
+push constant 12
+call Array.new 1
+pop local 5
+push constant 12
+call Array.new 1
+pop local 6
+push constant 0
+push local 5
+add
+push constant 203
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 5
+add
+push constant 185
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 5
+add
+push constant 171
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 5
+add
+push constant 165
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 5
+add
+push constant 168
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 5
+add
+push constant 179
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 5
+add
+push constant 197
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 5
+add
+push constant 214
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 5
+add
+push constant 228
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 5
+add
+push constant 235
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 5
+add
+push constant 231
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 11
+push local 5
+add
+push constant 220
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+push local 6
+add
+push constant 185
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 1
+push local 6
+add
+push constant 181
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 2
+push local 6
+add
+push constant 170
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 3
+push local 6
+add
+push constant 153
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 4
+push local 6
+add
+push constant 135
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 5
+push local 6
+add
+push constant 121
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 6
+push local 6
+add
+push constant 115
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 7
+push local 6
+add
+push constant 118
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 8
+push local 6
+add
+push constant 129
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 9
+push local 6
+add
+push constant 147
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 10
+push local 6
+add
+push constant 164
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 11
+push local 6
+add
+push constant 178
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 203
+pop local 1
+push constant 185
+pop local 2
+push constant 200
+pop local 3
+push constant 150
+pop local 4
+push constant 200
+push constant 150
+push constant 60
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 200
+push constant 150
+push constant 55
+call Screen.drawCircle 3
+pop temp 0
+push constant 1
+call Screen.setColor 1
+pop temp 0
+push constant 200
+push constant 150
+push local 1
+push local 2
+call Screen.drawLine 4
+pop temp 0
+push constant 0
+pop local 0
+push constant 200
+push constant 150
+push constant 180
+push constant 165
+call Screen.drawLine 4
+pop temp 0
+label WHILE_EXP0
+push local 0
+push constant 12
+lt
+not
+if-goto WHILE_END0
+call Screen.clearScreen 0
+pop temp 0
+push constant 200
+push constant 150
+push constant 60
+call Screen.drawCircle 3
+pop temp 0
+push constant 0
+call Screen.setColor 1
+pop temp 0
+push constant 200
+push constant 150
+push constant 55
+call Screen.drawCircle 3
+pop temp 0
+push constant 1
+call Screen.setColor 1
+pop temp 0
+push constant 200
+push constant 150
+push local 0
+push local 5
+add
+pop pointer 1
+push that 0
+push local 0
+push local 6
+add
+pop pointer 1
+push that 0
+call Screen.drawLine 4
+pop temp 0
+push constant 200
+push constant 150
+push constant 180
+push constant 165
+call Screen.drawLine 4
+pop temp 0
+push local 0
+push constant 1
+add
+pop local 0
+goto WHILE_EXP0
+label WHILE_END0
+push local 0
+call Output.printInt 1
+pop temp 0
+push constant 0
+return

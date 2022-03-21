@@ -1,0 +1,42 @@
+class Main
+{
+
+	function void main ()
+	{
+		var int n,mfrob;
+		var Matrix m,madd,mskalar,mmult,m2,meye;
+		let n=Keyboard.readInt("input: ");
+		let m=Matrix.new(n);
+		let m2=Matrix.new(n);
+		/*do m.print();*/
+		do Output.println();
+		
+		do m.set(0,0,1);
+		do m.set(0,1,2);
+		do m.set(1,0,3);
+		do m.set(1,1,4);
+		
+		do m2.set(0,0,4);
+		do m2.set(0,1,5);
+		do m2.set(1,0,6);
+		do m2.set(1,1,7);
+
+		/*let madd=m.add(m2);
+		do madd.print();
+		do Output.println();
+		let mskalar=m.multScalar(5);
+		do mskalar.print();
+		do Output.println();
+		let mmult=m.multMat(m);
+		/*do mmult.print();*/
+		
+
+		/*do m.print();
+		let mfrob=m.norm();
+		do Output.printInt(mfrob);*/
+
+		let meye=Matrix.eye(n);
+		do meye.print();
+	return;}
+}
+    

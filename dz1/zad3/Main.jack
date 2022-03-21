@@ -1,0 +1,59 @@
+class Main
+{
+
+	function void main ()
+	{
+		var int i,x2,y2,cx,cy;
+		var Array arrayx, arrayy;
+		let arrayx= Array.new(12);
+		let arrayy= Array.new(12);
+		let arrayx [ 0 ]= 203.0 ;
+		let arrayx [ 1 ]= 185.1 ;
+		let arrayx [ 2 ]= 171.2 ;
+		let arrayx [ 3 ]= 165.0 ;
+		let arrayx [ 4 ]= 168.2 ;
+		let arrayx [ 5 ]= 179.9 ;
+		let arrayx [ 6 ]= 197.0 ;
+		let arrayx [ 7 ]= 214.9 ;
+		let arrayx [ 8 ]= 228.8 ;
+		let arrayx [ 9 ]= 235.0 ;
+		let arrayx [ 10 ]= 231.8 ;
+		let arrayx [ 11 ]= 220.1 ;
+		let arrayy [ 0 ]= 185.0 ;
+		let arrayy [ 1 ]= 181.8 ;
+		let arrayy [ 2 ]= 170.1 ;
+		let arrayy [ 3 ]= 153.0 ;
+		let arrayy [ 4 ]= 135.1 ;
+		let arrayy [ 5 ]= 121.2 ;
+		let arrayy [ 6 ]= 115.0 ;
+		let arrayy [ 7 ]= 118.2 ;
+		let arrayy [ 8 ]= 129.9 ;
+		let arrayy [ 9 ]= 147.0 ;
+		let arrayy [ 10 ]= 164.9 ;
+		let arrayy [ 11 ]= 178.8 ;
+		let x2=203;
+		let y2=185;
+		let cx=200;
+		let cy=150;
+		do Screen.drawCircle(200,150,60);
+		do Screen.setColor(0);
+		do Screen.drawCircle(200,150,55);
+		do Screen.setColor(1);
+		do Screen.drawLine(200,150,x2,y2);
+		let i=0;
+		do Screen.drawLine(200,150,180,165);
+		while(i<12){
+			do Screen.clearScreen();
+			do Screen.drawCircle(200,150,60);
+			do Screen.setColor(0);
+			do Screen.drawCircle(200,150,55);
+			do Screen.setColor(1);
+			do Screen.drawLine(200,150,arrayx[i],arrayy[i]);
+			do Screen.drawLine(200,150,180,165);
+			let i=i+1;
+		}
+
+		do Output.printInt(i);
+	return;}
+}
+    
