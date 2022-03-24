@@ -15,8 +15,9 @@ class Main
 		let value=1;
 		while(i<a.length())
 			{
-			/*let x=a.charAt(i);*/
-			if( (a.charAt(i) = 40) | (a.charAt(i) = 91) | (a.charAt(i) = 123) ){ 
+			
+			if( (a.charAt(i) = 40) | (a.charAt(i) = 91) | (a.charAt(i) = 123) | (a.charAt(i) = 93)| (a.charAt(i) = 41) | (a.charAt(i) = 125) ){
+				if( (a.charAt(i) = 40) | (a.charAt(i) = 91) | (a.charAt(i) = 123) ){ 
 				let array[arraysize]=a.charAt(i);
 				let arraysize=arraysize+1;
 			}
@@ -51,6 +52,9 @@ class Main
 					let i=a.length()-1;
 					let value=0;
 				}}
+			}
+			/*let x=a.charAt(i);*/
+			
 			
 				/*do Output.println();
 				do Output.printString("end ");*/
