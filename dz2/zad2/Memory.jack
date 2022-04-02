@@ -40,9 +40,16 @@ class Memory {
 
   function void memcpy(int source, int destination, int d){
       var int i;
+      var Array ar;
+      let ar=Array.new(d);
       let i=0;
       while(i<d){
-         let MEMORY[destination+i]=MEMORY[source+i];
+        let ar[i]=MEMORY[source+i];
+        let i=i+1;
+      }
+      let i=0;
+      while(i<d){
+         let MEMORY[destination+i]=ar[i];
          let i=i+1;
       }
     return;
