@@ -1,0 +1,20 @@
+class Main
+{
+	function void main ()
+	{
+
+		var int a,b,div;
+		let a= Keyboard.readInt("input a: ");
+		let b= Keyboard.readInt("input b: ");
+		/*let div=Math.divide(a,b);
+		do Output.printInt(a);
+		do Output.printString("/");
+		do Output.printInt(b);
+		do Output.printString("=");
+		do Output.printInt(div);
+
+			*/
+		do Output.printInt(Math.pow(a,b));
+	return;}
+}
+    
