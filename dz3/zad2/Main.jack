@@ -1,0 +1,15 @@
+class Main
+{
+    function void main()
+    {
+        do Output.printString("Lorem ipsum dolor sit amet, consectetur adipiscing elit");
+        do Output.println();
+        do Output.moveCursor(0, 0);
+        do Output.printString("Sed ut perspiciatis unde omnis iste natus error sit voluptatem ");
+        do Output.println();
+        do Output.printString("Lorem ipsum dolor sit amet, consectetur adipiscing elit");
+        do Output.println();
+
+        return;
+    }
+}

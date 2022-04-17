@@ -1,0 +1,62 @@
+class Tetris{
+    field int x,y;
+    
+    constructor Tetris new(int x1, int y1){
+        let x=x1;
+        let y=y1;
+        
+        return this;
+    }
+    method void draw1(){
+        do Screen.clearScreen();
+        do Screen.drawRectangle(x,y,x+10,y+10);
+        do Screen.drawRectangle(x-10,y,x,y+10);
+        do Screen.drawRectangle(x+10,y,x+20,y+10);
+        do Screen.drawRectangle(x-10,y-10,x,y);
+        return;
+    }
+    method void draw2(){
+        do Screen.clearScreen();
+        do Screen.drawRectangle(x,y,x+10,y+10);
+        do Screen.drawRectangle(x,y+10,x+10,y+20);
+        do Screen.drawRectangle(x,y-10,x+10,y);
+        do Screen.drawRectangle(x+10,y-10,x+20,y);
+        return;
+    }
+    method void draw3(){
+        do Screen.clearScreen();
+        do Screen.drawRectangle(x,y,x+10,y+10);
+        do Screen.drawRectangle(x-10,y,x,y+10);
+        do Screen.drawRectangle(x+10,y,x+20,y+10);
+        do Screen.drawRectangle(x+10,y+10,x+20,y+20);
+        return;
+    }
+    method void draw4(){
+        do Screen.clearScreen();
+        do Screen.drawRectangle(x,y,x+10,y+10);
+        do Screen.drawRectangle(x,y+10,x+10,y+20);
+        do Screen.drawRectangle(x,y-10,x+10,y);
+        do Screen.drawRectangle(x-10,y+10,x,y+20);
+        return;
+    }
+
+    method void up(){
+        let x=x+10;
+        return;
+    }
+
+    method void down(){
+        let x=x-10;
+        return;
+    }
+    
+    method void left(){
+        let y=y-10;
+        return;
+    }
+    
+    method void right(){
+        let y=y+10;
+        return;
+    }
+}

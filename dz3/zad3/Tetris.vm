@@ -1,0 +1,250 @@
+function Tetris.new 0
+push constant 2
+call Memory.alloc 1
+pop pointer 0
+push argument 0
+pop this 0
+push argument 1
+pop this 1
+push pointer 0
+return
+function Tetris.draw1 0
+push argument 0
+pop pointer 0
+call Screen.clearScreen 0
+pop temp 0
+push this 0
+push this 1
+push this 0
+push constant 10
+add
+push this 1
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 10
+sub
+push this 1
+push this 0
+push this 1
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 10
+add
+push this 1
+push this 0
+push constant 20
+add
+push this 1
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 10
+sub
+push this 1
+push constant 10
+sub
+push this 0
+push this 1
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Tetris.draw2 0
+push argument 0
+pop pointer 0
+call Screen.clearScreen 0
+pop temp 0
+push this 0
+push this 1
+push this 0
+push constant 10
+add
+push this 1
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push this 1
+push constant 10
+add
+push this 0
+push constant 10
+add
+push this 1
+push constant 20
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push this 1
+push constant 10
+sub
+push this 0
+push constant 10
+add
+push this 1
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 10
+add
+push this 1
+push constant 10
+sub
+push this 0
+push constant 20
+add
+push this 1
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Tetris.draw3 0
+push argument 0
+pop pointer 0
+call Screen.clearScreen 0
+pop temp 0
+push this 0
+push this 1
+push this 0
+push constant 10
+add
+push this 1
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 10
+sub
+push this 1
+push this 0
+push this 1
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 10
+add
+push this 1
+push this 0
+push constant 20
+add
+push this 1
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 10
+add
+push this 1
+push constant 10
+add
+push this 0
+push constant 20
+add
+push this 1
+push constant 20
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Tetris.draw4 0
+push argument 0
+pop pointer 0
+call Screen.clearScreen 0
+pop temp 0
+push this 0
+push this 1
+push this 0
+push constant 10
+add
+push this 1
+push constant 10
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push this 1
+push constant 10
+add
+push this 0
+push constant 10
+add
+push this 1
+push constant 20
+add
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push this 1
+push constant 10
+sub
+push this 0
+push constant 10
+add
+push this 1
+call Screen.drawRectangle 4
+pop temp 0
+push this 0
+push constant 10
+sub
+push this 1
+push constant 10
+add
+push this 0
+push this 1
+push constant 20
+add
+call Screen.drawRectangle 4
+pop temp 0
+push constant 0
+return
+function Tetris.up 0
+push argument 0
+pop pointer 0
+push this 0
+push constant 10
+add
+pop this 0
+push constant 0
+return
+function Tetris.down 0
+push argument 0
+pop pointer 0
+push this 0
+push constant 10
+sub
+pop this 0
+push constant 0
+return
+function Tetris.left 0
+push argument 0
+pop pointer 0
+push this 1
+push constant 10
+sub
+pop this 1
+push constant 0
+return
+function Tetris.right 0
+push argument 0
+pop pointer 0
+push this 1
+push constant 10
+add
+pop this 1
+push constant 0
+return

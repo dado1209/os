@@ -1,0 +1,99 @@
+class Main
+{
+    function void main()
+    {
+        var char key;
+        var boolean go;
+        var Tetris t;
+        var int i;
+        let go=true;
+        let t=Tetris.new(100,100);
+        do t.draw1();
+        while(go){
+        let key = Keyboard.keyPressed();
+        if (key=140){
+             let go=false;
+             
+        }
+
+        if (key=82){
+            if(i & 3=0){
+                do t.draw2();
+            }
+            if(i & 3=1){
+                do t.draw3();
+            }
+            if(i & 3=2){
+                do t.draw4();
+            }
+            if(i & 3=3){
+                do t.draw1();
+            }
+           let i=i+1;
+        }
+        if (key=131){
+            do t.left();
+                        if(i & 3=0){
+                do t.draw1();
+            }
+            if(i & 3=1){
+                do t.draw2();
+            }
+            if(i & 3=2){
+                do t.draw3();
+            }
+            if(i & 3=3){
+                do t.draw4();
+            }
+        }
+                if (key=132){
+            do t.up();
+                        if(i & 3=0){
+                do t.draw1();
+            }
+            if(i & 3=1){
+                do t.draw2();
+            }
+            if(i & 3=2){
+                do t.draw3();
+            }
+            if(i & 3=3){
+                do t.draw4();
+            }
+        }
+                if (key=133){
+            do t.right();
+                        if(i & 3=0){
+                do t.draw1();
+            }
+            if(i & 3=1){
+                do t.draw2();
+            }
+            if(i & 3=2){
+                do t.draw3();
+            }
+            if(i & 3=3){
+                do t.draw4();
+            }
+        }
+        if (key=130){
+            do t.down();
+                        if(i & 3=0){
+                do t.draw1();
+            }
+            if(i & 3=1){
+                do t.draw2();
+            }
+            if(i & 3=2){
+                do t.draw3();
+            }
+            if(i & 3=3){
+                do t.draw4();
+            }
+        }
+
+        }
+
+        return;
+    }
+}
